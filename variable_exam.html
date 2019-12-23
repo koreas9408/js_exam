@@ -29,12 +29,12 @@
         // let age = 25;
         // let message = 'Hello';
 
-        let message;
+        // let message;
 
-        message = 'Hello !';
-        message = 'World !';
+        // message = 'Hello !';
+        // message = 'World !';
 
-        alert(message); // 'World !' 출력
+        // alert(message); // 'World !' 출력
 
         // 함수형 언어
         // 함수형 프로그래밍 언어는 변수값 변경을 금지합니다.
@@ -48,9 +48,38 @@
         // 첫 글자는 숫자가 될 수 없습니다.
 
         // 상수 ( 변하지 않는 수 )
-        const myBirthday = '94.04.08';
+        // const myBirthday = '94.04.08';
 
-        myBirthday = '123';
+        // myBirthday = '123'; // TypeError: Assignment to constant variable.
+
+        /*
+            요약
+
+            var / let / const 를 사용해 변수를 선언할 수 있다.
+            let - 모던한 변수 선언 키워드
+            var - 오래된 변수 선언 키워드 ( 잘 사용하지 않는다. )
+            const - let과 비슷, 변수의 값을 변경할 수 없다.
+
+            변수명은 변수가 담고 있는 것이 무엇인지 쉽게 알 수 있도록 지어져야 한다.
+        */
+
+        // 과제 #1 변수 가지고 놀기
+        let admin;
+        let name = 'John';
+        admin = name;
+        alert(admin);
+
+        // 과제 #2 올바른 이름 선택하기
+        let currentPlanet = 'Earth';
+        let currentUserName;
+
+        // 과제 #3 상수 올바로 사용하기
+        const birthday = '18.04.1982';
+        const age = someCode(birthday);
+        // birthday를 대문자 상수로 바꾸는 것이 적절할까?
+        // 아니면 age 역시 대문자 상수로 바꾸는 것이 괜찮은 선택일까?
+        // 나의 답 : birthday를 대문자로 바꾸고, age는 birthday에 따라서 달리지기 때문에 소문자로 둔다.
+
     </script>
 </body>
 
