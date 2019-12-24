@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 연산자
+        // 피연산자 : 연산자가 연산을 수행하는 대상
+
+        // let x = 1;
+        // x = -x;
+        // alert( x ); // -1, 단항 마이너스 연산자는 부호를 뒤집는다.
+
+        let x = 1, y = 3;
+        alert(y - x); // 2, 이항 마이너스 연산자는 뺄셈
+
+        let s = 'my' + 'string';
+        alert(s); // mystring
+
+        alert('1' + 2); // "12"
+        alert(2 + '1'); // "21"
+        // 어느 한 곳이 문자열이면 다른 하나도 문자열로 변환된다.
+
+        alert(2 + 2 + '1'); // 41
+
+        alert(2 - '1') // 1
+        alert('6' / '2'); // 3
+
+        // 숫자에는 아무런 영향을 미치지 않습니다.
+        let x = 1;
+        alert(+x); // 1
+
+        let y = -2;
+        alert(+y); // -2
+
+        // 숫자형이 아닌 피연산자가 숫자형으로 변환합니다.
+        alert(+true); //1
+        alert(+""); // 0
+
+        let apples = "2";
+        let oranges = "3";
+
+        alert(apples + oranges);
+
+        // 나머지 연산자 %
+
+        alert(5 % 2);
+        alert(8 % 3);
+        alert(6 % 3);
+
+        // 거듭제곱 연산자 **
+        alert(2 ** 2);
+        alert(2 ** 3);
+        alert(2 ** 4);
+
+        // 증감 연산자 ++, --
+
+        let counter = 2;
+        counter++; // counter = counter + 1
+        alert(counter);
+
+        counter--; // counter = counter - 1
+        alert(counter);
+
+        // 비트 연산자
+
+        // 비트 AND (&)
+        // OR (|)
+        // XOR (^)
+        // NOT (~)
+        // LEFT SHIFT (<<)
+        // RIGHT SHIFT (>>)
+
+        // 2진수 체계를 이해해야함 궁금하다면 MDN 사이트 참조
+
+        // 과제 #1 - 전위형과 후위형
+        let a = 1, b = 1;
+        let c = ++a; // c = 2, a = 2
+        let d = b++; // d = 1, b = 2
+
+        // 과제 #2 - 할당 후 결과 예측하기
+        let a = 2;
+        let x = 1 + (a *= 2); // x = 5, a = 4
+
+
+    </script>
+</body>
+
+</html>
