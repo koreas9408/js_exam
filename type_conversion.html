@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 함수와 연산자에 전달되는 값은 대부분 적절한 자료형으로 자동 변환됩니다.
+        // 이런 과정을 "형 변환" 이라고 합니다.
+
+        // 문자형으로 변환
+        let value = true;
+        alert(typeof value) // boolean
+
+        value = String(value); // value = 'string'
+        alert(typeof value);
+
+        // 숫자형으로 변환
+        alert("6" / "2") // 3, 문자열이 숫자로 자동변환 후 연산
+
+        let str = "123";
+        alert(typeof str);
+
+        let num = Number(str); // 문자열 "123" -> 숫자 123
+        alert(typeof num);
+
+        // 숫자형 값을 사용해 무언가를 하려고 하는데 그 값을 문자 기반 폼(form)을 통해 입력받은 경우
+        // 이런 경우에는 형 변환이 필수입니다.
+
+        // 한편, 숫자 이외의 글자가 들어있는 문자열을 숫자형으로 변환하려고 하면, NaN이 출력됩니다.
+        let age = Number("임의의 문자열 123");
+        alert(age); // NaN
+
+        // 불린형으로 변환
+        // 숫자 0, 빈문자열, null, undefined, NaN 과 같이 직관적으로 "비어있다고" 느껴지는 값들은 false가 됩니다.
+        // 그 외의 값을 true
+
+        alert(Boolean(1)); // 숫자 1 (true)
+        alert(Boolean(0)); // 숫자 0 (false)
+        alert(Boolean("hello")); // 문자열 (true)
+        alert(Boolean("")); // 빈 문자열 (false)
+
+        // 주의 할 점은 문자열 "0"도 true 입니다.
+
+        // 과제 #1 형 변환 ( 결과 예측 )
+        alert("" + 1 + 0) // 10
+        alert("" - 1 + 0) // ??
+        alert(true + true) // true
+        alert(6 / "3") // 2
+        alert("2" * "3") // 6
+        alert(4 + 5 + "px") // 45px
+        alert("$" + 4 + 5) // $45
+        alert("4" - 2) // 2
+        alert("4px" - 2) // NaN
+        alert(7 / 0) // Infinity
+        alert("  -9  " + 5) // -4
+        alert("  -9  " - 5) // -14
+        alert(null + 1) // ?? false
+        alert(undefined + 1) // ?? false
+        alert("  \t \n" - 2) // ??
+    </script>
+</body>
+
+</html>
